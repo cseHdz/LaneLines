@@ -12,12 +12,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[Output Image]: ./test_images_output/solidWhiteCurve.jpg "Solid White Curve Output"
-[Output Image]: ./test_images_output/solidWhiteRight.jpg "Solid White Right Output"
-[Output Image]: ./test_images_output/solidYellowCurve.jpg "Solid Yellow Curve Output"
-[Output Image]: ./test_images_output/solidYellowCurve2.jpg "Solid Yellow Curve 2 Output"
-[Output Image]: ./test_images_output/solidYellowLeft.jpg "Solid Yellow Left Output"
-[Output Image]: ./test_images_output/whiteCarLaneSwitch.jpg "White Car Lane Switch Output"
+[Output1]: ./test_images_output/solidWhiteCurve.jpg "Solid White Curve Output"
+[Output2]: ./test_images_output/solidWhiteRight.jpg "Solid White Right Output"
+[Output3]: ./test_images_output/solidYellowCurve.jpg "Solid Yellow Curve Output"
+[Output4]: ./test_images_output/solidYellowCurve2.jpg "Solid Yellow Curve 2 Output"
+[Output5]: ./test_images_output/solidYellowLeft.jpg "Solid Yellow Left Output"
+[Output6]: ./test_images_output/whiteCarLaneSwitch.jpg "White Car Lane Switch Output"
 
 
 ---
@@ -66,6 +66,14 @@ It must be noted that any line with a slope less than -0.3 was not included, whi
 
 If mean lines are successfully computed, then the pipeline proceeds to draw the lines on the image. However, if the Hough Line detection is too aggresive, the process above is repected with the next maximum line gap strategy as this allows for smaller lines to be detected.
 
+#### Sample Outputs
+![alt text][Output1]
+![alt text][Output2]
+![alt text][Output3]
+![alt text][Output4]
+![alt text][Output5]
+![alt text][Output6]
+
 
 ### 2. Identify potential shortcomings with your current pipeline
 
@@ -79,5 +87,7 @@ Second, the algorithm to compute mean lines extrapolates the lines to their natu
 ### 3. Suggest possible improvements to your pipeline
 
 A possible improvement would be to count the number of points that Hough lines have on the x-axis for each pixel on the y-axis. Then for each side (left and right) a mean value can be obtained for each y-axis pixel rather than establishing an overall mean from the image. 
+
+
 
 
